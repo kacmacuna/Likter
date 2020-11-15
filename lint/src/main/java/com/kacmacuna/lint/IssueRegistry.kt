@@ -14,6 +14,7 @@ class IssueRegistry : IssueRegistry() {
         get() = listOf(
             ColorResourceInLayoutDetector.COLOR_RESOURCE_ISSUE,
             ColorResourceInLayoutDetector.HARDCODED_COLOR_ISSUE,
-            ToolsTextInTextViewDetector.ISSUE
+            ToolsTextInTextViewDetector.ISSUE,
+            RecyclerViewToolsItemsDetector.ISSUE
         )
 }
