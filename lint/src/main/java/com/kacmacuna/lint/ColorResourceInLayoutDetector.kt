@@ -19,7 +19,8 @@ class ColorResourceInLayoutDetector : LayoutDetector(), SourceCodeScanner {
             SdkConstants.ATTR_SRC_COMPAT,
             SdkConstants.ATTR_BACKGROUND_TINT,
             SdkConstants.ATTR_FOREGROUND,
-            SdkConstants.ATTR_BACKGROUND_TINT
+            SdkConstants.ATTR_BACKGROUND_TINT,
+            SdkConstants.ATTR_TEXT_COLOR,
         )
     }
 
