@@ -1,2 +1,2 @@
 include ':app', ':lint'
-rootProject.name='Android Lint Example'
+rootProject.name='likter'

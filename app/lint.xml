@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="Autofill" severity="ignore" />
+    <issue id="HardcodedText" severity="error" />
+    <issue id="RtlSymmetry" severity="error" />
+    <issue id="ColorResourceInLayout" severity="error" />
+</lint>
