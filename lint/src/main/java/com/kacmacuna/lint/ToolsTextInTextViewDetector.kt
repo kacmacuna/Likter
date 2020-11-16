@@ -45,7 +45,7 @@ class ToolsTextInTextViewDetector : LayoutDetector() {
             severity = Severity.WARNING,
             implementation = Implementation(
                 ToolsTextInTextViewDetector::class.java,
-                ALL_RESOURCES_SCOPE
+                Scope.RESOURCE_FILE_SCOPE
             )
         )
     }

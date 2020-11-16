@@ -6,6 +6,7 @@ import com.android.resources.ResourceType
 import com.android.resources.ResourceUrl
 import com.android.tools.lint.detector.api.*
 import com.android.tools.lint.detector.api.Scope.Companion.ALL_RESOURCES_SCOPE
+import com.android.tools.lint.detector.api.Scope.Companion.RESOURCE_FILE_SCOPE
 import org.w3c.dom.Attr
 
 @Suppress("UnstableApiUsage")
@@ -63,7 +64,7 @@ class ColorResourceInLayoutDetector : LayoutDetector(), SourceCodeScanner {
             severity = Severity.WARNING,
             implementation = Implementation(
                 ColorResourceInLayoutDetector::class.java,
-                ALL_RESOURCES_SCOPE
+                RESOURCE_FILE_SCOPE
             )
         )
 
@@ -76,7 +77,7 @@ class ColorResourceInLayoutDetector : LayoutDetector(), SourceCodeScanner {
             severity = Severity.WARNING,
             implementation = Implementation(
                 ColorResourceInLayoutDetector::class.java,
-                ALL_RESOURCES_SCOPE
+                RESOURCE_FILE_SCOPE
             )
         )
 

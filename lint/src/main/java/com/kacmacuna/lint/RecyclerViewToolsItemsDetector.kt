@@ -34,7 +34,7 @@ class RecyclerViewToolsItemsDetector : LayoutDetector() {
     companion object {
         private val IMPLEMENTATION = Implementation(
             RecyclerViewToolsItemsDetector::class.java,
-            Scope.ALL_RESOURCES_SCOPE
+            Scope.RESOURCE_FILE_SCOPE
         )
 
         val ISSUE = Issue.create(
