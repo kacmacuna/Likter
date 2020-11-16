@@ -15,6 +15,7 @@ class IssueRegistry : IssueRegistry() {
             ColorResourceInLayoutDetector.COLOR_RESOURCE_ISSUE,
             ColorResourceInLayoutDetector.HARDCODED_COLOR_ISSUE,
             ToolsTextInTextViewDetector.ISSUE,
-            RecyclerViewToolsItemsDetector.ISSUE
+            RecyclerViewToolsItemsDetector.ISSUE,
+            HardcodedSPValueDetector.ISSUE
         )
 }
