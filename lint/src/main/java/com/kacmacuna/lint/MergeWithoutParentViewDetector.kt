@@ -1,15 +1,16 @@
 package com.kacmacuna.lint
 
+import com.android.SdkConstants
 import com.android.tools.lint.detector.api.*
 import com.android.utils.forEach
 import org.w3c.dom.Element
 import org.w3c.dom.Node
 
 @Suppress("UnstableApiUsage")
-class MergeTagToolsDetector : LayoutDetector() {
+class MergeWithoutParentViewDetector : LayoutDetector() {
 
     override fun getApplicableElements(): Collection<String>? = listOf(
-        "merge"
+        SdkConstants.VIEW_MERGE
     )
 
     override fun visitElement(context: XmlContext, element: Element) {
@@ -31,8 +32,7 @@ class MergeTagToolsDetector : LayoutDetector() {
                         "http://schemas.android.com/tools",
                         "parentTag",
                         "androidx.constraintlayout.widget.ConstraintLayout"
-                    )
-                    .build()
+                    ).build()
             )
         }
 
@@ -40,12 +40,12 @@ class MergeTagToolsDetector : LayoutDetector() {
 
     companion object {
         private val IMPLEMENTATION = Implementation(
-            MergeTagToolsDetector::class.java,
+            MergeWithoutParentViewDetector::class.java,
             Scope.RESOURCE_FILE_SCOPE
         )
 
         val ISSUE = Issue.create(
-            id = "mergeTag",
+            id = "MergeWithoutParentViewTag",
             briefDescription = "this will help for previewing the layout",
             explanation = "merge tag should have tools:parentTag",
             category = Category.USABILITY,
