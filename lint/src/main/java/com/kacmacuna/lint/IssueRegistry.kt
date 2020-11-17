@@ -3,7 +3,6 @@ package com.kacmacuna.lint
 import com.android.tools.lint.client.api.IssueRegistry
 import com.android.tools.lint.detector.api.CURRENT_API
 import com.android.tools.lint.detector.api.Issue
-import org.jetbrains.kotlin.diagnostics.reportOnDeclaration
 
 @Suppress("UnstableApiUsage")
 class IssueRegistry : IssueRegistry() {
@@ -16,6 +15,7 @@ class IssueRegistry : IssueRegistry() {
             ColorResourceInLayoutDetector.HARDCODED_COLOR_ISSUE,
             ToolsTextInTextViewDetector.ISSUE,
             RecyclerViewToolsItemsDetector.ISSUE,
-            HardcodedSPValueDetector.ISSUE
+            HardcodedSPValueDetector.ISSUE,
+            MergeTagToolsDetector.ISSUE
         )
 }
