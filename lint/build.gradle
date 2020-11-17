@@ -13,8 +13,8 @@ java {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compileOnly "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compileOnly "com.android.tools.lint:lint-api:27.1.1"
     compileOnly "com.android.tools.lint:lint-checks:27.1.1"
-    testImplementation "com.android.tools.lint:lint-tests:27.1.1"
+    testCompileOnly "com.android.tools.lint:lint-tests:27.1.1"
 }
