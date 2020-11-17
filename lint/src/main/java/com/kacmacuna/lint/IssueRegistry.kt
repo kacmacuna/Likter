@@ -16,6 +16,8 @@ class IssueRegistry : IssueRegistry() {
             ToolsTextInTextViewDetector.ISSUE,
             RecyclerViewToolsItemsDetector.ISSUE,
             HardcodedSPValueDetector.ISSUE,
-            MergeWithoutParentViewDetector.ISSUE
+            MergeWithoutParentViewDetector.ISSUE,
+            DeprecatedRelativeLayoutDetector.XML_ISSUE,
+            DeprecatedRelativeLayoutDetector.SOURCE_CODE_ISSUE
         )
 }
