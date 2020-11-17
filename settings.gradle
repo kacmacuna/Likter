@@ -1,2 +1,3 @@
 include ':app', ':lint'
 rootProject.name='likter'
+include ':lib'
